@@ -1,3 +1,5 @@
+from typing import Optional
+
 class ListNode:
 	def __init__(self, data):
 		self.data = data
@@ -10,5 +12,5 @@ class Solution:
 			slow = slow.next
 			fast = fast.next.next
 			if slow == fast:
-				retrun True
+				return True
 		return False
